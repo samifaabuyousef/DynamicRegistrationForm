@@ -1,0 +1,50 @@
+[
+    {
+        "ID":"FirstName",
+        "Label":"First Name",
+        "Type":"text",
+        "Value":"Sami"
+    } ,
+    {
+        "ID":"LastName",
+        "Label":"Last Name",
+        "Type":"text",
+        "Value":"Fareed"
+    },
+    {
+        "ID":"MobileNo",
+        "Label":"Mobile Number",
+        "Type":"text",
+        "Value":"0595476061"
+    },
+    {
+        "ID":"Email",
+        "Label":"Email",
+        "Type":"text",
+        "Value":"samif.a.abuyousef@gmail.com"
+    },
+    {
+        "ID":"Gender",
+        "Label":"Gender",
+        "Type":"text",
+        "Value":"male"
+    },
+    {
+        "ID":"DOB",
+        "Label":"Date Of Birth",
+        "Type":"date",
+        "Value":"29*11*1988"
+    },
+    {
+        "ID":"City",
+        "Label":"City",
+        "Type":"city",
+        "Value":"Gaza"
+    },
+    {
+        "ID":"Bio",
+        "Label":"Biography",
+        "Type":"bio",
+        "Value":"GazaStrip,WestBank"
+    }
+]

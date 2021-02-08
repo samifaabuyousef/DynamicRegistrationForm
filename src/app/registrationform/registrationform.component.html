@@ -1,0 +1,51 @@
+<div class="header color">
+    <h1>Registration Form</h1>
+</div>
+<section class="container">
+    <form id="form">
+        <div class="row form">
+            <div class="col-md-12 " *ngFor="let control of DynaminFormArray">
+                <div [ngSwitch]="control.Type">
+                    <div *ngSwitchCase="'input'" class="row">
+                        <div class="col-md-4">
+                            <label>{{control.Label}}</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="'date'" class="row">
+                        <div class="col-md-4">
+                            <label>{{control.Label}}</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="'radio'" class="row">
+                        <div class="col-md-4">
+                            <label>{{control.Label}}</label>
+                        </div>
+                        <div class="col-md-6">
+                           <label class="radio" *ngFor="let val of control.Value.split(',')"> {{val}}
+                               <input type="radio" name="{{control.ID}}" value="{{val}}">
+                           </label>
+                        </div>
+                    </div>
+                    <div *ngSwitchCase="'select'" class="row">
+                        <div class="col-md-4">
+                            <label>{{control.Label}}</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control">
+                                <option value="-1">Select</option>
+                                <option *ngFor="let val of control.Value.split(',')" value="{{val}}">{{val}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <button type="submit" class="btn btn-primary col-md-12"> Submit</button>
+        </div>
+    </form>
+</section>
